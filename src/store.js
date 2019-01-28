@@ -10,9 +10,7 @@ export default new Vuex.Store({
     links: ["http://google.com", "http://yandex.ru", "http://youtube.ru"],
   },
   getters: {
-    countLinks: state => {
-      return state.links.length;
-    },
+    countLinks: state => state.links.length,
   },
   mutations: {
     ADD_LINK: (state, link) => {

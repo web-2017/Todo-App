@@ -8,7 +8,7 @@
           type="text" class="link-input" placeholder="add a link"
           v-model="newLink"
         )
-    
+
       ul
         li(v-for="(link, index) in links" :key="index")
           span {{link}}
@@ -19,8 +19,9 @@
 
 
 <script>
-import Stats from "./Stats";
 import { mapState, mapMutations, mapActions } from "vuex";
+import Stats from "./Stats";
+
 export default {
   data() {
     return {

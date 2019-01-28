@@ -4,7 +4,7 @@
     p There are currently {{ countLinks }} links
 
     button(
-      @click='removeAllLinks' 
+      @click='removeAllLinks'
     ) Remove all links
     p {{ msg ? 'They have removed' : `We have ${countLinks} links`}}
 </template>
